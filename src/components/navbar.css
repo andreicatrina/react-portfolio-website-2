@@ -88,6 +88,36 @@ nav {
         height: 4rem;
         width: 100%;
         box-shadow: -2rem 2rem 5rem rgba(0,0,0,0.4);
+        animation: navAnimation 600ms ease forwards;
+        transform: rotateX(90deg);
+        opacity: 0;
+        transform-origin: top;
+    }
+
+    @keyframes navAnimation {
+        to {
+            transform: rotateX(0);
+            opacity: 1;
+        }
+    }
+
+    .nav__links li:nth-child(2) {
+        animation-delay: 200ms;
+    }
+    .nav__links li:nth-child(3) {
+        animation-delay: 400ms;
+    }
+    .nav__links li:nth-child(4) {
+        animation-delay: 600ms;
+    }
+    .nav__links li:nth-child(5) {
+        animation-delay: 800ms;
+    }
+    .nav__links li:nth-child(6) {
+        animation-delay: 1000ms;
+    }
+    .nav__links li:nth-child(7) {
+        animation-delay: 1200ms;
     }
 
     .nav__links li a {
